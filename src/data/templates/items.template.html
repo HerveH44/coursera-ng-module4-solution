@@ -1,0 +1,30 @@
+<div class="container">
+<!--
+    <div class="row" ng-repeat="it in itemsList.menu_items">
+        {{$index + 1}}.
+        {{it.name}}
+    </div> -->
+
+    <div class="table-responsive" >
+         <legend class="alert alert-info">
+             <a ui-sref="categories">Menu</a>: <strong>{{itemsList.categoryName}}</strong>  - {{itemsList.menu_items.length}} {{itemsList.resultTitle}}</legend>
+         <table class="table table-condensed table-hover" summary="Chinese Menu results" cellpadding="5" cellspacing="5">
+             <thead>
+                 <tr>
+                   <th ng-repeat="header in itemsList.headers">
+                       <a href="" ng-click="itemsList.sortReverse = itemsList.sortOrder == header.id ? !itemsList.sortReverse:false; itemsList.sortOrder = header.id;">
+                           {{header.lib}}
+                           <span ng-show="itemsList.sortOrder == header.id && !itemsList.sortReverse" class="glyphicon glyphicon-chevron-up"></span>
+                           <span ng-show="itemsList.sortOrder == header.id && itemsList.sortReverse" class="glyphicon glyphicon-chevron-down"></span>
+                       </a>
+                   </th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <tr ng-repeat="item in itemsList.menu_items | orderBy: itemsList.sortOrder: itemsList.sortReverse">
+                     <td ng-repeat="header in itemsList.headers">{{item[header.id]}}</td>
+                 </tr>
+             </tbody>
+         </table>
+     </div>
+</div>

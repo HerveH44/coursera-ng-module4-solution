@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en" ng-app="MenuApp">
+    <head>
+        <title>Welcome to Plip's restaurant</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link rel="stylesheet" href="styles/bootstrap.min.css"> -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles/styles.css">
+        <base href="/">
+    </head>
+    <body>
+        <header>
+            <!-- Navigation
+                ================================================== -->
+            <div class="navbar navbar-inverse" role="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <div class="navbar-brand" id="title">Welcome to Plip's restaurant</div>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a ui-sref="home">Home</a></li>
+                            <li><a ui-sref="categories">Menus</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <ui-view></ui-view>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- Javascript de Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Libraries -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+
+    <!-- Modules -->
+    <script src="src/menuapp/menuapp.module.js"></script>
+    <script src="src/data/data.module.js"></script>
+
+    <!-- Routes -->
+    <script src="src/routes.js"></script>
+
+    <!-- 'data' module artifacts -->
+    <script src="src/data/categories.component.js"></script>
+    <script src="src/data/categories.controller.js"></script>
+    <script src="src/data/items.component.js"></script>
+    <script src="src/data/items.controller.js"></script>
+    <script src="src/data/menudata.service.js"></script>
+</body>
+</html>
