@@ -7,9 +7,6 @@ angular.module('MenuApp')
 RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider', '$locationProvider'];
 function RoutesConfig($stateProvider, $urlRouterProvider, $locationProvider) {
 
-  //enable HTML5Mode for navigation without hash tags
-  // $locationProvider.html5Mode(true);
-
   // Redirect to home page if no other URL matches
   $urlRouterProvider.otherwise('/home');
 

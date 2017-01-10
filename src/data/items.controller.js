@@ -36,12 +36,6 @@
             lib: "Price large",
             id: "price_large"
         }];
-        // mainList.$onInit = function () {
-        //   ShoppingListService.getItems()
-        //   .then(function (result) {
-        //     mainList.items = result;
-        //   });
-        // };
     }
 
 })();

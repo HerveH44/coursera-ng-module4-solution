@@ -1,39 +1,3 @@
-@font-face {
-  font-family: "ChinaOne Normal";
-  src: url("../fonts/ChinaOne_Normal/ChinaOne.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  background-color: #e0b145;
-  /*background: url("../img/pexels-photo-229493.jpeg") no-repeat center center fixed;*/
-  -webkit-background-size: 100% auto;
-
-  -moz-background-size: 100% auto;
-
-  -ms-background-size: 100% auto;
-
-  -o-background-size: 100% auto;
-
-  /*background-size: 100% auto;*/
-  background-size: cover;
-  font-family: "Josefin Sans";
-
-}
-
-
-/*.mainList { width:320px; }*/
-.mainList ol { font-style:italic; font-family:Georgia, Times, serif; font-size:24px; color:#bfe1f1;  }
-.mainList ol li { }
-.mainList ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:#eee; border-left: 1px solid #999; }
-.mainList ol li p em { display:block; }
-
-/* Title */
-#title {
-  font-family:"ChinaOne Normal";
-}
-
 /* Images */
 img {
   width: 100%;
